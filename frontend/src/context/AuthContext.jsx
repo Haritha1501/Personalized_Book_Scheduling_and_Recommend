@@ -15,6 +15,8 @@ export const AuthProvider = ({ children }) => {
 
   const [loading, setLoading] = useState(true);
 
+  axios.defaults.baseURL = import.meta.env.VITE_API_BASE_URL || '';
+
   useEffect(() => {
     // Setup Axios request interception
     const requestInterceptor = axios.interceptors.request.use(
