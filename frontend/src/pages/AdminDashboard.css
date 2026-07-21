@@ -1,0 +1,185 @@
+.admin-page-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+/* Aggregations grid */
+.admin-aggregations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.25rem;
+}
+
+.aggregation-box {
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+  padding: 1.25rem !important;
+}
+
+.agg-icon {
+  font-size: 2.4rem;
+}
+
+.agg-meta {
+  display: flex;
+  flex-direction: column;
+}
+
+.agg-val {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.agg-lbl {
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* Color styles */
+.border-left-success { border-left: 3px solid var(--success); }
+.border-left-info { border-left: 3px solid var(--info); }
+.border-left-accent { border-left: 3px solid var(--accent); }
+.border-left-warning { border-left: 3px solid var(--warning); }
+
+.font-success-color { color: var(--success); }
+.font-info-color { color: var(--info); }
+.font-accent-color { color: var(--accent); }
+.font-warning-color { color: var(--warning); }
+
+/* Users & books lists */
+.admin-lists-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 992px) {
+  .admin-lists-grid {
+    grid-template-columns: 1.2fr 1fr;
+  }
+}
+
+.admin-list-card h3 {
+  font-size: 1.1rem;
+  color: var(--text-primary);
+  margin-bottom: 0.25rem;
+}
+
+.list-subtitle {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  margin-bottom: 1.1rem;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.admin-table th, .admin-table td {
+  padding: 0.75rem 0.9rem;
+  border-bottom: 1px solid var(--border-color);
+  font-size: 0.85rem;
+}
+
+.admin-table th {
+  background-color: var(--bg-tertiary);
+  color: var(--text-secondary);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+}
+
+.admin-table tbody tr:hover {
+  background-color: var(--bg-tertiary);
+}
+
+.reader-info-cell {
+  display: flex;
+  flex-direction: column;
+}
+
+.reader-info-cell span {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+}
+
+/* Trends */
+.admin-trends-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .admin-trends-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.trend-card {
+  padding: 1.25rem !important;
+}
+
+.trend-header {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-bottom: 1.1rem;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 0.5rem;
+}
+
+.trend-icon {
+  font-size: 1.4rem;
+  color: var(--accent);
+}
+
+.trend-card h3 {
+  font-size: 1.02rem;
+  color: var(--text-primary);
+}
+
+.trend-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.trend-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  background-color: var(--bg-tertiary);
+  padding: 0.55rem 0.9rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-color);
+}
+
+.trend-count-badge {
+  font-weight: 700;
+  font-size: 0.75rem;
+  background-color: var(--accent-light);
+  color: var(--accent);
+  padding: 0.15rem 0.55rem;
+  border-radius: 3px;
+}
+
+.trend-count-badge.bg-teal {
+  background-color: var(--success-light);
+  color: var(--success);
+}

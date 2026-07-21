@@ -1,0 +1,124 @@
+.achievements-page-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.achievements-hero-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2.5rem 2rem;
+  gap: 0.75rem;
+}
+
+.achievements-hero-icon {
+  font-size: 3rem;
+  color: var(--warning);
+}
+
+.achievements-hero-card h2 {
+  font-size: 1.6rem;
+  color: var(--text-primary);
+}
+
+.achievements-hero-card p {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  max-width: 600px;
+}
+
+/* Showcase grid */
+.achievements-showcase-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.25rem;
+}
+
+.achievement-detail-card {
+  display: flex;
+  gap: 1.1rem;
+  padding: 1.1rem !important;
+  align-items: center;
+}
+
+.badge-visual-container {
+  position: relative;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: var(--bg-tertiary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+  flex-shrink: 0;
+  border: 1px solid var(--border-color);
+}
+
+.badge-lock-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.4rem;
+  color: var(--text-secondary);
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.badge-detail-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.badge-detail-meta h3 {
+  font-size: 0.98rem;
+  color: var(--text-primary);
+}
+
+.badge-detail-meta p {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
+
+.badge-xp-reward {
+  font-weight: 700;
+  font-size: 0.83rem;
+  color: var(--accent);
+}
+
+.badge-status-unlocked-at {
+  font-size: 0.7rem;
+  color: var(--success);
+  font-weight: 600;
+}
+
+.badge-status-locked {
+  font-size: 0.7rem;
+  color: var(--text-secondary);
+  font-weight: 600;
+}
+
+/* Unlocked state */
+.achievement-detail-card.unlocked {
+  border-left: 3px solid var(--success);
+}
+
+.achievement-detail-card.unlocked .badge-visual-container {
+  background-color: var(--success-light);
+}
+
+/* Locked state */
+.achievement-detail-card.locked {
+  opacity: 0.6;
+}

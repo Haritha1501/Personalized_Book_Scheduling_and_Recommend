@@ -1,0 +1,220 @@
+.profile-page-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+/* Header card */
+.profile-header-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.25rem;
+  padding: 1.75rem !important;
+}
+
+@media (min-width: 768px) {
+  .profile-header-card {
+    flex-direction: row;
+    text-align: left;
+  }
+}
+
+.profile-avatar-bubble {
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  background-color: var(--accent);
+  color: white;
+  font-weight: 700;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid var(--border-color);
+  flex-shrink: 0;
+}
+
+.profile-user-summary {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.profile-user-summary h2 {
+  font-size: 1.6rem;
+  color: var(--text-primary);
+}
+
+.email-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+}
+
+.email-icon {
+  font-size: 1.1rem;
+  color: var(--accent);
+}
+
+.profile-badge-tier {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.25rem;
+}
+
+.badge-level {
+  background-color: var(--success-light);
+  color: var(--success);
+  font-weight: 700;
+  padding: 0.18rem 0.55rem;
+  border-radius: 3px;
+  font-size: 0.8rem;
+}
+
+.badge-name {
+  background-color: var(--bg-tertiary);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  font-weight: 600;
+  padding: 0.18rem 0.55rem;
+  border-radius: 3px;
+  font-size: 0.8rem;
+}
+
+.profile-classification-bubble {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--accent-light);
+  border: 1px solid var(--border-color);
+  padding: 0.7rem 1.1rem;
+  border-radius: var(--radius-sm);
+  align-self: stretch;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .profile-classification-bubble {
+    align-self: center;
+  }
+}
+
+.bubble-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.bubble-val {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+/* Diagnostics grid */
+.profile-diagnostics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.25rem;
+}
+
+.diagnostic-box {
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+  padding: 1.1rem !important;
+}
+
+.diag-icon-wrapper {
+  font-size: 2.1rem;
+  color: var(--accent);
+  background-color: var(--accent-light);
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.diag-text h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.diag-text p {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+/* History table */
+.profile-history-card h3 {
+  font-size: 1.05rem;
+  color: var(--text-primary);
+  margin-bottom: 0.25rem;
+}
+
+.history-subtitle {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  margin-bottom: 1.1rem;
+}
+
+.logs-table-container {
+  overflow-x: auto;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+}
+
+.logs-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.logs-table th, .logs-table td {
+  padding: 0.9rem;
+  border-bottom: 1px solid var(--border-color);
+  font-size: 0.9rem;
+}
+
+.logs-table th {
+  background-color: var(--bg-tertiary);
+  color: var(--text-secondary);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+}
+
+.logs-table tbody tr:hover {
+  background-color: var(--bg-tertiary);
+}
+
+.table-book-title-cell {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  font-weight: 600;
+  min-width: 220px;
+}
+
+.table-book-thumb {
+  width: 30px;
+  height: 44px;
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+.no-logs {
+  padding: 3rem 1rem;
+  text-align: center;
+  color: var(--text-secondary);
+}

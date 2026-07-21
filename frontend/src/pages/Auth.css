@@ -1,0 +1,135 @@
+.auth-page {
+  min-height: 100vh;
+  background-color: var(--bg-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 1.5rem;
+}
+
+.back-home-btn {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.back-home-btn:hover {
+  color: var(--accent);
+}
+
+.auth-card-container {
+  width: 100%;
+  max-width: 420px;
+}
+
+.auth-card {
+  padding: 2.25rem 1.75rem;
+}
+
+.auth-card-header {
+  text-align: center;
+  margin-bottom: 1.75rem;
+}
+
+.auth-logo-icon {
+  font-size: 2.2rem;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+.auth-card-header h2 {
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  margin-bottom: 0.35rem;
+}
+
+.auth-card-header p {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.auth-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.auth-form-group label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+/* Icon in inputs */
+.input-with-icon {
+  position: relative;
+}
+
+.input-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-secondary);
+  font-size: 1.15rem;
+  pointer-events: none;
+}
+
+.input-with-icon .form-input {
+  padding-left: 38px;
+}
+
+.auth-submit-btn {
+  margin-top: 0.5rem;
+  justify-content: center;
+  padding: 0.75rem;
+}
+
+.auth-card-footer {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.auth-card-footer a {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.auth-card-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Alerts */
+.auth-error-alert {
+  background-color: rgba(214, 69, 69, 0.08);
+  border-left: 3px solid var(--danger);
+  color: var(--danger);
+  padding: 0.7rem 0.9rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+  margin-bottom: 1.1rem;
+}
+
+.auth-success-alert {
+  background-color: var(--success-light);
+  border-left: 3px solid var(--success);
+  color: var(--success);
+  padding: 0.7rem 0.9rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+  margin-bottom: 1.1rem;
+}

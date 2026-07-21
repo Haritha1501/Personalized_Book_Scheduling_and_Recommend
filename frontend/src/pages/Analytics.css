@@ -1,0 +1,178 @@
+.analytics-page-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+/* Metric cards */
+.analytics-metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.25rem;
+}
+
+.metric-item-box {
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+  padding: 1.25rem !important;
+}
+
+.metric-box-icon {
+  font-size: 2.2rem;
+  color: var(--accent);
+}
+
+.metric-box-meta {
+  display: flex;
+  flex-direction: column;
+}
+
+.metric-box-val {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.metric-box-lbl {
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* Box background variants */
+.bg-accent-light { background-color: var(--accent-light); }
+.bg-success-light { background-color: var(--success-light); }
+.bg-info-light { background-color: #eaf1f9; }
+.bg-warning-light { background-color: #faf0e0; }
+
+/* Classification row */
+.analytics-classification-row {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  align-items: center;
+  text-align: center;
+  padding: 1.75rem !important;
+}
+
+@media (min-width: 768px) {
+  .analytics-classification-row {
+    flex-direction: row;
+    text-align: left;
+  }
+}
+
+.classification-icon {
+  font-size: 2.6rem;
+  color: var(--accent);
+  background-color: var(--accent-light);
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.classification-meta {
+  flex: 1;
+}
+
+.classification-meta span {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  font-weight: 700;
+}
+
+.classification-meta h2 {
+  font-size: 1.6rem;
+  color: var(--accent);
+  margin-bottom: 0.25rem;
+}
+
+.classification-meta p {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+}
+
+.classification-stat-pills {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Charts grid */
+.analytics-charts-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 992px) {
+  .analytics-charts-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.chart-container-box h3 {
+  font-size: 1.05rem;
+  color: var(--text-primary);
+  margin-bottom: 1.1rem;
+}
+
+.chart-wrapper-box {
+  min-height: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.no-chart-data {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+/* Certificates */
+.analytics-certificates-section h3 {
+  font-size: 1.05rem;
+  color: var(--text-primary);
+  margin-bottom: 0.25rem;
+}
+
+.analytics-certificates-section p {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin-bottom: 1.1rem;
+}
+
+.certificates-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.certificate-pill {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--bg-tertiary);
+  border: 1px solid var(--border-color);
+  padding: 0.75rem 1.1rem;
+  border-radius: var(--radius-sm);
+}
+
+.cert-book-name {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.cert-print-btn {
+  padding: 0.45rem 1.1rem;
+  font-size: 0.8rem;
+}
